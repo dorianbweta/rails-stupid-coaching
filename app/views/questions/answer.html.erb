@@ -1,4 +1,20 @@
-<p><%= params[:question] %></p>
-<p><%= @answer %></p>
+<div class="w-80 p-3">
 
-<%= link_to "Ask a new question", ask_path %>
+  <blockquote>
+    <p>
+      <% if @question.blank? %>
+        😶
+      <% else %>
+        <%= @question %>
+      <% end %>
+    </p>
+    <cite>You</cite>
+  </blockquote>
+
+  <blockquote class="coach">
+    <p><%= @answer %></p>
+    <cite>Your coach</cite>
+  </blockquote>
+
+  <%= link_to "Ask a new question", ask_path %>
+</div>

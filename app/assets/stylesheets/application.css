@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400');
+
+ body {
+   font-family: Roboto;
+   font-weight: 300;
+   padding: 0 24px;
+ }
+
+ h1 {
+   font-weight: 400;
+ }
+
+ blockquote {
+   border-left: 6px solid #ddd;
+   margin: 1.5em 0;
+   padding: 0.5em 1em;
+ }
+
+ blockquote.coach {
+   background-color: lightyellow;
+ }
+
+ blockquote.coach p {
+   font-weight: 400;
+ }
+
+ /* This adds a dash (—) before the content of a citation,
+ which is often used to indicate the source of a quote or reference in a document. */
+ cite:before {
+   content: "—"
+ }
